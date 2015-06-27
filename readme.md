@@ -1,11 +1,10 @@
-# Cannnacoin/Altcoin faucet
-![To the moon!](images/cannacoin-coin.png)
+# Coin Faucet
 
 ### INSTALL:
 Download project & unzip to your web server root directory (ie. www) 
 
 ### Edit config.php 
-	- $don_faucet: CannaCoind address label used for donations/payouts.
+	- $don_faucet: Coind address label used for donations/payouts.
 	- $btclogin:   RPC User/Pass settings
 	- $sqllogin:   Database user/pass settings
 
@@ -21,11 +20,11 @@ Download project & unzip to your web server root directory (ie. www)
 #### Import faucet.sql to your database:
 	- Change to "core" directory
 	- mysql -u user -p database < faucet.sql
+	
+Or if you are using a GUI frontend (PHPMyadmin, ADminer, etc) just create the database, then import the .sql file into it.
 
 ### Notes:
-Some will maybe have to create the faucet donation account within CannaCoind
-(The account must use the label set in the config.php ie. FaucetDonations)
+Whatever account name you set in the config file, must correspond to the actual Wallet name in the daemon. I.E. A wallet labeled 'FaucetWallet' in the config, must have the same name (FaucetWallet) in the wallet's Daemon.
 
-### Donate: 
-CCN: CWVUagZxizcmF7QcKvF3ynfW4hU4tdKUhp <br>
-BTC: 1PqmdGtUTdasS19KwBTL2R7xgYEyJrtdhd
+### Donate:
+BTC: 1Dh4Ct1xEDi1e4RE8Fqv5YB8EVyQQDuD8V
